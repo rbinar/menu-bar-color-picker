@@ -39,6 +39,8 @@ open MenuBarColorPicker.xcodeproj
 
 ## 🎯 Usage
 
+![How to use Menu Bar Color Picker](screenshot-how-to-use.gif)
+
 1. **Launch the app** - The eyedropper icon will appear in your menu bar
 2. **Click the menu bar icon** to open the color picker
 3. **Pick colors**:
@@ -55,10 +57,6 @@ This app is built with:
 - **AppKit** for macOS integration
 - **NSColorSampler** for screen color picking
 - **NSColorPanel** for native color selection
-
-## 📸 Screenshots
-
-*Screenshots coming soon*
 
 ## 🤝 Contributing
 

@@ -67,14 +67,6 @@ This app is built with:
 - **NSColorSampler** for screen color picking
 - **NSColorPanel** for native color selection
 
-### 🔐 Code Signing & Notarization
-
-For developers with Apple Developer accounts:
-- Use `release.sh` for building signed releases
-- Use `notarize.sh` for Apple notarization (see [SECURITY.md](SECURITY.md) for safe usage)
-
-**⚠️ Security Note**: Never commit Apple Developer credentials to the repository. See [SECURITY.md](SECURITY.md) for guidelines.
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.

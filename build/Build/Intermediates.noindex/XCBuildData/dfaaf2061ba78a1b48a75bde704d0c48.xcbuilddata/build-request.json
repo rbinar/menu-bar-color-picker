@@ -1,0 +1,68 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "22f5bdec33ea2c79fb90cd6e0650dc8f85adcb64ac3b5a761e8d5465040e9a97"
+    }
+  ],
+  "containerPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/MenuBarColorPicker.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx15.5",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Build/Products",
+      "derivedDataPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build",
+      "indexDataStoreFolderPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "CLANG_COVERAGE_MAPPING" : "YES",
+          "CLANG_PROFILE_DATA_DIRECTORY" : "/Users/rbinar/Documents/Repos/mac-apps/menu-bar-color-picker/build/Build/ProfileData",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "129",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

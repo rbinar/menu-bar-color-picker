@@ -29,12 +29,14 @@ fi
 # DMG oluştur
 create-dmg \
   --volname "Menu Bar Color Picker" \
+  --volicon "MenuBarColorPicker/Assets.xcassets/AppIcon.appiconset/icon_512x512.png" \
   --window-pos 200 120 \
-  --window-size 600 300 \
-  --icon-size 100 \
-  --icon "MenuBarColorPicker.app" 175 120 \
+  --window-size 800 400 \
+  --icon-size 128 \
+  --icon "MenuBarColorPicker.app" 200 190 \
   --hide-extension "MenuBarColorPicker.app" \
-  --app-drop-link 425 120 \
+  --app-drop-link 600 190 \
+  --background-color "#F5F5F7" \
   "MenuBarColorPicker-v${VERSION}.dmg" \
   "./build/Build/Products/Release/" || {
     echo "DMG creation failed, trying alternative method..."

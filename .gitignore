@@ -38,6 +38,21 @@ DerivedData/
 # DMG files
 *.dmg
 
+# Security - Never commit credentials
+.env
+.env.local
+.env.production
+*.p12
+*.mobileprovision
+credentials.txt
+secrets.txt
+apple-credentials.*
+
+# Personal/temporary scripts (keep project scripts)
+test-*.sh
+temp-*.sh
+local-*.sh
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However

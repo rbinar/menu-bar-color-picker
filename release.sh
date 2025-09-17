@@ -18,6 +18,19 @@ xcodebuild -project MenuBarColorPicker.xcodeproj \
            -derivedDataPath ./build \
            clean build
 
+echo "🔐 Code signing (optional)..."
+# Code sign the app if Developer ID is available
+if security find-identity -v -p codesigning | grep -q "Developer ID Application"; then
+    echo "📝 Developer ID found, signing application..."
+    DEVELOPER_ID=$(security find-identity -v -p codesigning | grep "Developer ID Application" | head -1 | sed 's/.*"\(.*\)".*/\1/')
+    codesign --force --options runtime --sign "$DEVELOPER_ID" \
+             "./build/Build/Products/Release/MenuBarColorPicker.app"
+    echo "✅ Application signed with: $DEVELOPER_ID"
+else
+    echo "⚠️  No Developer ID found - app will show security warning on other Macs"
+    echo "   Users can bypass this via System Preferences > Security & Privacy"
+fi
+
 echo "📦 Creating DMG..."
 
 # Check if create-dmg is installed

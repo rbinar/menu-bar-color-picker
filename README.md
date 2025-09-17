@@ -30,6 +30,15 @@ A powerful and intuitive color picker utility that lives in your macOS menu bar.
 3. Drag `MenuBarColorPicker.app` to your Applications folder
 4. Launch from Applications or Spotlight
 
+### ⚠️ Security Notice (First Launch)
+Since this app is not notarized by Apple, you may see a security warning on first launch:
+1. If you see **"MenuBarColorPicker" Cannot Be Opened**, click **"OK"**
+2. Go to **System Preferences > Security & Privacy > General**
+3. Click **"Open Anyway"** next to the blocked app message
+4. Click **"Open"** in the confirmation dialog
+
+This is a one-time setup - the app will launch normally afterwards.
+
 ### Build from Source
 ```bash
 git clone https://github.com/rbinar/menu-bar-color-picker.git
@@ -57,6 +66,14 @@ This app is built with:
 - **AppKit** for macOS integration
 - **NSColorSampler** for screen color picking
 - **NSColorPanel** for native color selection
+
+### 🔐 Code Signing & Notarization
+
+For developers with Apple Developer accounts:
+- Use `release.sh` for building signed releases
+- Use `notarize.sh` for Apple notarization (see [SECURITY.md](SECURITY.md) for safe usage)
+
+**⚠️ Security Note**: Never commit Apple Developer credentials to the repository. See [SECURITY.md](SECURITY.md) for guidelines.
 
 ## 🤝 Contributing
 

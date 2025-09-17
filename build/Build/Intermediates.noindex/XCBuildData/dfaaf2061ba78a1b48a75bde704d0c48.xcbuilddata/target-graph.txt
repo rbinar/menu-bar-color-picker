@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'MenuBarColorPicker' in project 'MenuBarColorPicker' (no dependencies)
